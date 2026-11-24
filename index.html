@@ -436,9 +436,9 @@ footer a{font-weight:800}
 </footer>
 <script>
 document.getElementById('participer').addEventListener('submit',function(e){
-  e.preventDefault();var f=e.target,p=f.prenom.value.trim(),c=f.commune.value.trim(),v=f.envies.value.trim();
+  e.preventDefault();if(this._envoi)return;this._envoi=1;var moi=this;setTimeout(function(){moi._envoi=0;},4000);var f=e.target,p=f.prenom.value.trim(),c=f.commune.value.trim(),v=f.envies.value.trim();
   var corps='Bonjour,\n\nJe souhaite faire partie des premiers membres de la communauté IriScope.\n\nPrénom : '+p+'\nCommune : '+c+'\nTéléphone : '+f.tel.value+(v?'\n\nMes idées, mes envies :\n'+v:'')+'\n';
-  location.href='mailto:contact.iriscope@gmail.com?subject='+encodeURIComponent('Je participe ('+c+')')+'&body='+encodeURIComponent(corps);
+  var l=document.createElement('a');l.href='mailto:contact.iriscope@gmail.com?subject='+encodeURIComponent('Je participe ('+c+')')+'&body='+encodeURIComponent(corps);l.style.display='none';document.body.appendChild(l);l.click();l.remove();
 });
 document.getElementById('partager').addEventListener('click',function(){
   var t="J'apporte ma pierre à la communauté IriScope, l'appli des sorties et de la vie pratique près de chez soi. Et vous ?",u='https://iriscope-app.fr/';
