@@ -75,17 +75,17 @@ a{color:inherit}
 .hero-txt{padding-bottom:26px}
 .kicker{display:inline-block;background:rgba(255,255,255,.12);color:#ffd2ad;font-weight:800;font-size:13.5px;border-radius:999px;padding:5px 12px;margin:0 0 14px}
 h1{font-size:clamp(32px,8.6vw,54px);font-weight:900;line-height:1.08;margin:0 0 14px;letter-spacing:-.015em}
-h1 em{font-style:normal;background:linear-gradient(90deg,#ff8a8d,#ffa15e,#ffd84a,#5fd39a,#5bb8ff);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+h1 em{font-style:normal;-webkit-box-decoration-break:clone;box-decoration-break:clone;background:linear-gradient(180deg,#E5484D 37%,#F76B15 45%,#F5BE00 53%,#30A46C 60%,#0D8BE6 67%,#4C3FD6 76%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
 .lead{font-size:18.5px;margin:0 0 22px;opacity:.95;max-width:32em}
 .btns{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 .btn{display:inline-flex;align-items:center;gap:8px;min-height:50px;padding:12px 24px;border-radius:999px;font-weight:900;text-decoration:none;font-size:16.5px}
 .btn-main{background:#fff;color:var(--navy);box-shadow:0 6px 18px rgba(0,0,0,.25)}
-.btn-soon{border:2px solid rgba(255,255,255,.5);color:#fff;cursor:default}
+.btn-soon{border:2px solid rgba(255,255,255,.9);color:#fff;cursor:default}
 .btn-soon svg{flex:none}
 .ticks{list-style:none;display:flex;flex-wrap:wrap;gap:6px 16px;padding:0;margin:18px 0 0;font-size:14.5px;font-weight:700;opacity:.95}
 .ticks li::before{content:"✓ ";color:#7be0a8;font-weight:900}
 .stage{position:relative;justify-self:center;width:300px;height:430px;margin-top:6px}
-.stage::before{content:"";position:absolute;left:50%;top:26px;width:440px;height:440px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle,rgba(0,0,0,0) 0 60%,rgba(229,72,77,.5) 60.5% 62.5%,rgba(247,107,21,.5) 63% 65%,rgba(245,190,0,.5) 65.5% 67.5%,rgba(48,164,108,.5) 68% 70%,rgba(13,139,230,.5) 70.5% 72.5%,rgba(76,63,214,.5) 73% 75%,rgba(0,0,0,0) 75.5%)}
+.stage::before{content:"";position:absolute;left:50%;top:26px;width:440px;height:440px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle,rgba(0,0,0,0) 0 60%,rgba(229,72,77,.9) 60.5% 62.5%,rgba(247,107,21,.9) 63% 65%,rgba(245,190,0,.9) 65.5% 67.5%,rgba(48,164,108,.9) 68% 70%,rgba(13,139,230,.9) 70.5% 72.5%,rgba(76,63,214,.9) 73% 75%,rgba(0,0,0,0) 75.5%)}
 .stage .phone{position:absolute;left:50%;top:44px;transform:translateX(-50%);width:236px;height:470px;aspect-ratio:auto}
 .float{position:absolute;z-index:2;background:#fff;color:#1d2433;border-radius:14px;padding:8px 12px;font-size:13px;font-weight:800;box-shadow:0 10px 24px rgba(0,0,0,.3);display:flex;gap:7px;align-items:center;white-space:nowrap}
 .float small{display:block;font-weight:700;color:#566074;font-size:11.5px}
@@ -239,7 +239,7 @@ footer a{font-weight:800}
             <div class="s-vig">⚠️ <span><b>Vigilance jaune vent</b><br>Rhône · jusqu'à 20 h</span></div>
             <div class="s-h">Aujourd'hui près de chez vous</div>
             <div class="s-ev"><i style="background:#F76B15">🎄</i><span><em>Marché</em><b>Marché de Noël</b><small>Place Carnot · 1 km</small></span></div>
-            <div class="s-ev"><i style="background:#7c4dff">🎷</i><span><em>Concert</em><b>Soirée jazz</b><small>20 h 30 · 2 km</small></span></div>
+            <div class="s-ev"><i style="background:#9B4CC4">🎷</i><span><em>Concert</em><b>Soirée jazz</b><small>20 h 30 · 2 km</small></span></div>
             <div class="s-ev"><i style="background:#2B9A66">🎨</i><span><em>Exposition</em><b>Photographes d'ici</b><small>Jusqu'à dimanche · 3 km</small></span></div>
             <div class="s-ev"><i style="background:#0D8BE6">🎬</i><span><em>Cinéma</em><b>Ciné-goûter</b><small>16 h · 2 km</small></span></div>
           </div>
@@ -320,7 +320,7 @@ footer a{font-weight:800}
           <div class="s-hint">Résultats pour « brocante »</div>
           <div class="s-ev"><i style="background:#F5BE00">🧺</i><span><em>Brocante</em><b>Braderie du centre</b><small>Samedi · 1 km</small></span></div>
           <div class="s-ev"><i style="background:#F76B15">📚</i><span><em>Marché</em><b>Marché aux livres</b><small>Dimanche · 2 km</small></span></div>
-          <div class="s-ev"><i style="background:#7c4dff">🧸</i><span><em>Bourse</em><b>Bourse aux jouets</b><small>Dim. 6 déc. · 4 km</small></span></div>
+          <div class="s-ev"><i style="background:#9B4CC4">🧸</i><span><em>Bourse</em><b>Bourse aux jouets</b><small>Dim. 6 déc. · 4 km</small></span></div>
         </div>
         <div class="s-nav"><span>Accueil</span><span>Carte</span><span class="on">Sorties</span><span>Pratique</span></div>
       </div></div>
