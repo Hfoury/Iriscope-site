@@ -33,7 +33,7 @@
 {"@type":"SoftwareApplication","name":"Iriscope","applicationCategory":"LifestyleApplication","operatingSystem":"Android, Web","inLanguage":"fr-FR","description":"L'appli de votre coin : sorties, météo et vigilances, balades et infos pratiques près de chez vous, partout en France.","image":"https://iriscope-app.fr/img/partage.png","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://iriscope-app.fr/#org"}},
 {"@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"Iriscope est-elle gratuite ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Les sorties, la météo, les vigilances, les infos pratiques, la recherche et la lecture vocale sont gratuites, pour toujours."}},
-{"@type":"Question","name":"Quand Iriscope sera-t-elle sur Google Play ?","acceptedAnswer":{"@type":"Answer","text":"Iriscope est en phase de tests intensifs. Elle arrive bientôt sur Google Play, puis sur iPhone."}},
+{"@type":"Question","name":"Iriscope existe-t-elle sur Android et sur iPhone ?","acceptedAnswer":{"@type":"Answer","text":"Iriscope est en phase de tests intensifs. Elle arrive bientôt sur Google Play pour Android, puis sur l'App Store pour iPhone. En attendant, les premiers testeurs l'utilisent déjà sur les deux."}},
 {"@type":"Question","name":"Quelles villes sont couvertes ?","acceptedAnswer":{"@type":"Answer","text":"Toute la France métropolitaine. Vous choisissez une ou plusieurs zones (domicile, travail, vacances) et Iriscope s'occupe du reste."}},
 {"@type":"Question","name":"Je gère une salle ou j'organise des événements : comment apparaître ?","acceptedAnswer":{"@type":"Answer","text":"C'est gratuit pour vous. Écrivez à contact.iriscope@gmail.com ou consultez la page dédiée aux salles."}}
 ]}
@@ -197,9 +197,11 @@ details p{margin:0 0 14px;color:var(--muted)}
 .form{display:grid;gap:12px;max-width:440px;margin:0 auto;text-align:left}
 .form label{display:grid;gap:5px;font-weight:800;font-size:15px}
 .form small{font-weight:600;color:var(--muted)}
-.form input,.form textarea{font:600 16px/1.4 Nunito,system-ui,sans-serif;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;width:100%}
-.form input:focus,.form textarea:focus{outline:3px solid rgba(13,139,230,.35);border-color:#0D8BE6}
+.form input,.form textarea,.form select{font:600 16px/1.4 Nunito,system-ui,sans-serif;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;width:100%}
+.form input:focus,.form textarea:focus,.form select:focus{outline:3px solid rgba(13,139,230,.35);border-color:#0D8BE6}
 .form .mini{font-size:13.5px;margin:0;text-align:center}
+.os h3{margin:0 0 8px}.os p{margin:0;color:var(--muted)}.os p b{color:var(--ink)}
+.tag{display:inline-block;background:var(--c);color:#fff;font-weight:900;font-size:15px;border-radius:999px;padding:5px 14px}
 .share{text-align:center;margin:22px 0 0}
 .btn-ghost{background:transparent;color:var(--h2);border:2px solid var(--h2);font-family:inherit;cursor:pointer;font-size:15.5px;min-height:46px;padding:10px 20px}
 footer{border-top:1px solid var(--line);padding:22px 0 40px;color:var(--muted);font-size:14.5px}
@@ -330,6 +332,22 @@ footer a{font-weight:800}
   <p class="sub" style="margin:6px 0 0;font-size:14px">Écrans illustrés à titre d'exemple.</p>
 </section>
 
+<section aria-labelledby="telephones">
+  <h2 id="telephones">Sur Android et sur iPhone</h2>
+  <p class="sub"><span class="iri">Iri<span>S</span>cope</span> arrive sur les deux. En attendant, les premiers membres l'utilisent déjà.</p>
+  <div class="grid">
+    <div class="card os">
+      <h3><span class="tag" style="--c:#30A46C">Android</span></h3>
+      <p><b>Bientôt sur Google Play.</b> Dès maintenant, les premiers testeurs installent l'appli sur leur téléphone Android : nous vous envoyons le lien et les étapes.</p>
+    </div>
+    <div class="card os">
+      <h3><span class="tag" style="--c:#0D8BE6">iPhone</span></h3>
+      <p><b>Ensuite sur l'App Store.</b> Dès maintenant, <span class="iri">Iri<span>S</span>cope</span> s'utilise dans Safari et s'ajoute à l'écran d'accueil comme une appli : bouton Partager, puis « Sur l'écran d'accueil ».</p>
+    </div>
+  </div>
+  <p style="margin:16px 0 0"><a class="btn btn-ghost" href="#contact" style="text-decoration:none">Recevoir le lien pour mon téléphone</a></p>
+</section>
+
 <section aria-labelledby="france">
   <h2 id="france">Partout en France</h2>
   <p class="sub">Grande ville, bourg ou village : choisissez votre commune, et ajoutez celle de vos vacances ou de vos proches.</p>
@@ -366,7 +384,7 @@ footer a{font-weight:800}
 <section aria-labelledby="faq">
   <h2 id="faq">Questions fréquentes</h2>
   <details><summary><span class="iri">Iri<span>S</span>cope</span> est-elle gratuite ?</summary><p>Oui. Les sorties, la météo, les vigilances, les infos pratiques, la recherche et la lecture vocale sont gratuites, pour toujours.</p></details>
-  <details><summary>Quand sera-t-elle sur Google Play ?</summary><p><span class="iri">Iri<span>S</span>cope</span> est en phase de tests intensifs. Elle arrive bientôt sur Google Play, puis sur iPhone. Pour l'essayer dès maintenant, faites partie des premiers testeurs.</p></details>
+  <details><summary>Existe-t-elle sur Android et sur iPhone ?</summary><p><span class="iri">Iri<span>S</span>cope</span> est en phase de tests intensifs. Elle arrive bientôt sur Google Play pour Android, puis sur l'App Store pour iPhone. Pour l'essayer dès maintenant, faites partie des premiers testeurs.</p></details>
   <details><summary>Quelles villes sont couvertes ?</summary><p>Toute la France métropolitaine. Vous choisissez une ou plusieurs zones (domicile, travail, vacances) et <span class="iri">Iri<span>S</span>cope</span> s'occupe du reste.</p></details>
   <details><summary>Je gère une salle : comment apparaître ?</summary><p>C'est gratuit pour vous. Écrivez-nous ou consultez la <a href="/salles/">page dédiée aux salles</a>.</p></details>
 </section>
@@ -396,6 +414,7 @@ footer a{font-weight:800}
     <p class="founder">⭐ Les premiers testeurs deviennent <b>membres fondateurs</b> : les fonctions Premium leur seront offertes à vie.</p>
     <form id="participer" class="form">
       <label>Votre prénom<input name="prenom" autocomplete="given-name" required maxlength="40"></label>
+      <label>Votre téléphone<select name="tel"><option>Android</option><option>iPhone</option><option>Les deux</option></select></label>
       <label>Votre commune<input name="commune" autocomplete="address-level2" required maxlength="60" placeholder="Ex. Annecy"></label>
       <label><span>Vos idées, vos envies <small>(facultatif)</small></span><textarea name="envies" rows="3" maxlength="600" placeholder="Ce que vous aimeriez trouver près de chez vous"></textarea></label>
       <button class="btn" type="submit">Je participe</button>
@@ -416,7 +435,7 @@ footer a{font-weight:800}
 <script>
 document.getElementById('participer').addEventListener('submit',function(e){
   e.preventDefault();var f=e.target,p=f.prenom.value.trim(),c=f.commune.value.trim(),v=f.envies.value.trim();
-  var corps='Bonjour,\n\nJe souhaite faire partie des premiers membres de la communauté IriScope.\n\nPrénom : '+p+'\nCommune : '+c+(v?'\n\nMes idées, mes envies :\n'+v:'')+'\n';
+  var corps='Bonjour,\n\nJe souhaite faire partie des premiers membres de la communauté IriScope.\n\nPrénom : '+p+'\nCommune : '+c+'\nTéléphone : '+f.tel.value+(v?'\n\nMes idées, mes envies :\n'+v:'')+'\n';
   location.href='mailto:contact.iriscope@gmail.com?subject='+encodeURIComponent('Je participe ('+c+')')+'&body='+encodeURIComponent(corps);
 });
 document.getElementById('partager').addEventListener('click',function(){
