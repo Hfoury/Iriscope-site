@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Créer mon compte IriScope</title>
+<meta name="description" content="Choisissez votre appareil et créez votre compte IriScope en un coup d'œil. C'est gratuit.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.ico"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#14286B">
+<meta property="og:type" content="website"><meta property="og:site_name" content="IriScope">
+<meta property="og:url" content="https://iriscope-app.fr/commencer/">
+<meta property="og:title" content="Créez votre compte IriScope">
+<meta property="og:description" content="Android, iPhone, PC, Mac ou Linux : le bon lien pour votre appareil. Gratuit.">
+<meta property="og:image" content="https://iriscope-app.fr/img/commencer.png"><meta property="og:image:width" content="1080"><meta property="og:image:height" content="1080">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+@font-face{font-family:Nunito;src:url(/fonts/nunito.woff2) format("woff2");font-weight:600 900;font-display:swap}
+:root{--bg:#f6f8fc;--card:#fff;--ink:#1d2433;--muted:#566074;--line:#e3e8f2;--h:#14286B}
+@media (prefers-color-scheme:dark){:root{--bg:#0b1020;--card:#151c30;--ink:#e8ecf5;--muted:#a3adc2;--line:#262f48;--h:#dfe6ff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:600 16.5px/1.5 Nunito,system-ui,sans-serif}
+.bar{height:5px;background:linear-gradient(90deg,#E5484D,#F76B15,#F5BE00,#30A46C,#0D8BE6,#4C3FD6)}
+header{background:linear-gradient(170deg,#14286B,#0b1747);color:#fff;padding:22px 16px 26px;text-align:center}
+header img{height:46px}h1{font-size:28px;font-weight:900;line-height:1.15;margin:14px 0 6px}header p{margin:0;opacity:.93}
+.iri{font-weight:900;white-space:nowrap}.iri span{font-size:1.36em;line-height:0;vertical-align:-.055em;background:linear-gradient(180deg,#E5484D 21.5%,#F76B15 33.3%,#F5BE00 44%,#30A46C 53.6%,#0D8BE6 63.2%,#4C3FD6 75%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+main{max-width:560px;margin:0 auto;padding:18px 16px 40px;display:grid;gap:14px}
+.os{background:var(--card);border:1px solid var(--line);border-left:8px solid var(--c);border-radius:20px;padding:16px 18px;order:2}
+.os.me{order:1;box-shadow:0 0 0 3px var(--c)}
+.os h2{margin:0 0 2px;font-size:21px;font-weight:900;color:var(--h)}
+.os .mine{display:none;background:var(--c);color:#fff;border-radius:999px;font-size:13px;font-weight:900;padding:3px 10px;margin-left:8px;vertical-align:middle}
+.os.me .mine{display:inline-block}
+ol{margin:8px 0 12px;padding-left:22px;color:var(--muted)}li{margin:3px 0}
+.btn{display:flex;justify-content:center;align-items:center;min-height:52px;border-radius:999px;background:#14286B;color:#fff;font-weight:900;font-size:17px;text-decoration:none;padding:12px 20px}
+.tip{order:3;color:var(--muted);font-size:15px;text-align:center;margin:4px 0 0}.tip a{color:var(--h);font-weight:800}
+</style></head><body>
+<div class="bar"></div>
+<header><a href="/"><img src="/img/logo-fonce.svg" alt="IriScope" width="176" height="46"></a>
+<h1>Créez votre compte</h1><p>Choisissez votre appareil. C'est gratuit.</p></header>
+<main>
+<section class="os" id="android" style="--c:#30A46C"><h2>📱 Android<span class="mine">Votre appareil</span></h2>
+<ol><li>Appuyez sur le bouton : l'appli se télécharge.</li><li>Ouvrez le fichier et acceptez l'installation.</li><li>Ouvrez <span class="iri">Iri<span>S</span>cope</span> et créez votre compte.</li></ol>
+<a class="btn" href="https://github.com/Hfoury/iriscope/releases/latest/download/iriscope.apk">Installer l'appli Android</a></section>
+<section class="os" id="iphone" style="--c:#0D8BE6"><h2>🍏 iPhone<span class="mine">Votre appareil</span></h2>
+<ol><li>Ouvrez cette page dans Safari.</li><li>Appuyez sur le bouton et créez votre compte.</li><li>Bouton Partager, puis «&nbsp;Sur l'écran d'accueil&nbsp;».</li></ol>
+<a class="btn" href="https://hfoury.github.io/iriscope/?v=2">Ouvrir IriScope</a></section>
+<section class="os" id="ordi" style="--c:#F76B15"><h2>💻 PC, Mac ou Linux<span class="mine">Votre appareil</span></h2>
+<ol><li>Appuyez sur le bouton.</li><li>Créez votre compte.</li><li>Gardez la page en favori, ou installez-la depuis le menu du navigateur.</li></ol>
+<a class="btn" href="https://hfoury.github.io/iriscope/?v=2">Ouvrir IriScope</a></section>
+<p class="tip">Gardez la même adresse mail partout : vous retrouverez votre compte sur tous vos appareils.<br>Une question ? <a href="mailto:contact.iriscope@gmail.com">contact.iriscope@gmail.com</a></p>
+</main>
+<script>
+var u=navigator.userAgent,id=/Android/i.test(u)?'android':(/iPhone|iPad|iPod/i.test(u)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1))?'iphone':'ordi';
+document.getElementById(id).classList.add('me');
+</script>
+</body></html>
