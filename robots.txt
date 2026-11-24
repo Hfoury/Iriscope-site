@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://iriscope-app.fr/sitemap.xml
