@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Journal de bord · IriScope</title>
-<meta name="description" content="Le journal de bord d'IriScope : chaque semaine, ce que les retours de la communauté ont changé dans l'appli.">
+<title>Où en est IriScope ? Version en cours et suite · Journal de bord</title>
+<meta name="description" content="Où en est IriScope : la version en cours, ce qui se prépare pour la suite et ce que les retours de la communauté ont déjà changé.">
 <link rel="canonical" href="https://iriscope-app.fr/journal/"><link rel="icon" href="/favicon.ico">
-<meta property="og:title" content="Journal de bord · IriScope"><meta property="og:image" content="https://iriscope-app.fr/img/partage.png">
+<meta property="og:title" content="Où en est IriScope ?"><meta property="og:description" content="La version en cours, ce qui se prépare et ce qui a déjà changé."><meta property="og:image" content="https://iriscope-app.fr/img/partage.png">
 <meta name="color-scheme" content="light dark">
 <style>
 @font-face{font-family:Nunito;src:url(/fonts/nunito.woff2) format("woff2");font-weight:600 900;font-display:swap}
@@ -11,17 +11,52 @@
 
 :root{--bg:#f6f8fc;--ink:#1d2433;--muted:#566074;--h:#14286B;--card:#fff;--line:#e3e8f2}
 @media (prefers-color-scheme:dark){:root{--bg:#0b1020;--ink:#e8ecf5;--muted:#a3adc2;--h:#9fb6ff;--card:#151c30;--line:#262f48}}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+body{margin:0;background:var(--bg);color:var(--ink);font:600 16px/1.6 Nunito,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
 .wrap{max-width:760px;margin:0 auto;padding:20px 16px 48px}
 h1{color:var(--h);font-size:28px;line-height:1.2}h2{color:var(--h);font-size:20px;margin-top:28px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px}
 a{color:var(--h);font-weight:600}p,li{color:var(--ink)}
 </style>
-<style>article{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin-top:16px}article h2{margin:0 0 6px}article time{color:var(--muted);font-weight:700;font-size:14px}li{margin:6px 0}</style>
+<style>article{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin-top:16px}article h2{margin:0 0 6px}article time{color:var(--muted);font-weight:700;font-size:14px}li{margin:6px 0}.now{background:linear-gradient(var(--card),var(--card)) padding-box,linear-gradient(90deg,#E5484D,#F76B15,#F5BE00,#30A46C,#0D8BE6,#4C3FD6) border-box;border:3px solid transparent;border-radius:18px;padding:14px 18px;margin-top:16px}
+.now small{display:block;color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:12.5px}
+.now b{display:block;font-size:22px;font-weight:900;color:var(--h);line-height:1.25}.now span{color:var(--muted);font-size:15px}
+.sommaire{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0;padding:0;list-style:none}.sommaire li{margin:0}
+.sommaire a{display:inline-block;text-decoration:none;font-weight:800;font-size:14.5px;border:1.5px solid var(--line);background:var(--card);border-radius:999px;padding:6px 13px}
+h2.t{font-size:23px;font-weight:900;margin:34px 0 4px}.lead{color:var(--muted);margin:0}
+.todo{list-style:none;padding:0;margin:0}.todo li{display:flex;gap:10px;align-items:flex-start;margin:9px 0}.todo li::before{content:"";flex:none;width:12px;height:12px;border-radius:50%;margin-top:7px;background:var(--c,#0D8BE6)}
+.todo b{font-weight:900}
+</style>
 </head><body><div class="wrap">
 <p><a href="/">← Retour à l'accueil</a></p>
-<h1>Journal de bord</h1>
-<p>Au fil des versions, quelques lignes sur ce que les retours de la communauté <span class="iri">Iri<span>S</span>cope</span> ont changé. Une idée, une envie ? <a href="/#contact">Dites-le-nous</a>.</p>
+<h1>Où en est <span class="iri">Iri<span>S</span>cope</span> ?</h1>
+<p>La version en cours, ce qui se prépare et ce qui a déjà changé grâce aux retours de la communauté <span class="iri">Iri<span>S</span>cope</span>.</p>
+<div class="now"><small>Version en cours</small><b>1.05.2, du 25 novembre 2026</b><span>Sur Android et sur le web.</span></div>
+<ul class="sommaire"><li><a href="#suite">Ce qui arrive</a></li><li><a href="#plus-tard">Plus tard</a></li><li><a href="#fait">Déjà fait</a></li></ul>
+
+<h2 class="t" id="suite">Ce qui arrive</h2>
+<p class="lead">En cours de préparation, dans les prochains jours et semaines.</p>
+<article><ul class="todo" style="--c:#30A46C">
+<li><span><b>« J'y suis, ça a bien lieu »</b> : confirmer d'un geste qu'une sortie a bien lieu, pour tous ceux qui hésitent.</span></li>
+<li><span><b>Demander aux voisins</b> : poser une question sur son coin à ceux qui y vivent.</span></li>
+<li><span><b>Des vigilances mieux rangées</b> : le bandeau montre d'abord la zone que vous regardez, et se ferme d'un geste.</span></li>
+<li><span><b>De la carte à la liste</b> : un bouton « Voir en liste » pour retrouver les mêmes sorties, avec le même filtre.</span></li>
+<li><span><b>L'heure de partir</b> : un rappel au bon moment pour ne pas manquer une sortie.</span></li>
+<li><span><b>Recettes de saison</b> : des idées de repas selon les produits de votre région et vos goûts.</span></li>
+<li><span><b>Piscines et patinoires</b> près de chez vous, et une sauvegarde automatique de vos réglages.</span></li>
+</ul></article>
+
+<h2 class="t" id="plus-tard">Plus tard</h2>
+<p class="lead">Les grandes étapes, sans date ferme : tout dépend de vos retours.</p>
+<article><ul class="todo" style="--c:#4C3FD6">
+<li><span><b>Sortie sur Google Play</b>, prévue pour les fêtes de fin d'année.</span></li>
+<li><span><b>Sortie sur l'App Store</b> (iPhone), prévue fin janvier.</span></li>
+<li><span><b>Partager une sortie en image</b>, une liste à cocher, vos équipes favorites.</span></li>
+<li><span><b>Une loupe de recherche partout</b> et la lecture à voix haute par rubrique.</span></li>
+</ul></article>
+<p>Une idée, une envie, quelque chose qui cloche ? <a href="/#contact">Dites-le-nous</a> : c'est comme cela que cette liste s'écrit.</p>
+
+<h2 class="t" id="fait">Déjà fait</h2>
+<p class="lead">Le journal de bord, version après version.</p>
 <article>
 <time datetime="2026-11-25">Mercredi 25 novembre 2026 · version 1.05.2</time>
 <h2>Une appli qui vous ressemble</h2>
