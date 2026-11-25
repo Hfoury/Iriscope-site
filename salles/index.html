@@ -7,21 +7,22 @@
 <meta property="og:image" content="https://iriscope-app.fr/img/partage.png">
 <title>Iriscope et votre salle</title>
 <meta name="description" content="Iriscope, l'appli de votre coin, fait connaître votre programme à vos futurs spectateurs. C'est gratuit pour vous.">
+<meta name="color-scheme" content="dark">
 <style>
 @font-face{font-family:Nunito;src:url(/fonts/nunito.woff2) format("woff2");font-weight:600 900;font-display:swap}
 .iri{font-family:Nunito,system-ui,sans-serif;font-weight:900;white-space:nowrap}.iri span{font-size:1.36em;line-height:0;vertical-align:-.055em;background:linear-gradient(180deg,#E5484D 21.5%,#F76B15 33.3%,#F5BE00 44%,#30A46C 53.6%,#0D8BE6 63.2%,#4C3FD6 75%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
 
-:root{--navy:#14286B;--ink:#1d2433;--muted:#5b6475;--bg:#f6f8fc;--card:#fff;--green:#2B9A66;--orange:#E8590C}
+:root{--navy:#14286B;--ink:#e8ecf5;--muted:#a3adc2;--bg:#0b1020;--card:#151c30;--green:#4cc38a;--orange:#F76B15}
 *{box-sizing:border-box}
 body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
 .wrap{max-width:760px;margin:0 auto;padding:0 18px}
-header{background:var(--navy);color:#fff;padding:22px 0 30px}
+header{background:linear-gradient(170deg,#14286B,#0b1747);color:#fff;padding:22px 0 30px}
 header img{height:46px;display:block;margin-bottom:18px}
 h1{font-size:clamp(26px,6vw,38px);line-height:1.15;margin:0 0 10px}
 header p{font-size:18px;margin:0;opacity:.93;max-width:620px}
 section{margin:26px 0}
-h2{font-size:22px;color:var(--navy);margin:0 0 8px}
-.card{background:var(--card);border-radius:18px;padding:18px 20px;box-shadow:0 1px 8px rgba(20,40,107,.08)}
+h2{font-size:22px;color:#dfe6ff;margin:0 0 8px}
+.card{background:var(--card);border:1px solid #262f48;border-radius:18px;padding:18px 20px}
 .grid{display:grid;gap:12px}
 @media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
 .grid .card h3{margin:0 0 4px;font-size:17px}
@@ -29,8 +30,8 @@ h2{font-size:22px;color:var(--navy);margin:0 0 8px}
 ul.ok{list-style:none;padding:0;margin:8px 0 0}
 ul.ok li{padding:5px 0 5px 28px;position:relative}
 ul.ok li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:800}
-.note{border-left:5px solid var(--orange);background:#fff8f1;border-radius:12px;padding:14px 16px;margin-top:10px}
-.cta{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;font-weight:800;padding:13px 22px;border-radius:999px;margin-top:6px}
+.note{border-left:5px solid var(--orange);background:#2a1d12;border-radius:12px;padding:14px 16px;margin-top:10px}
+.cta{display:inline-block;background:#fff;color:#14286B;text-decoration:none;font-weight:800;padding:13px 22px;border-radius:999px;margin-top:6px}
 footer{padding:18px 0 40px;color:var(--muted);font-size:14px}
 @media print{
 @page{size:A4;margin:0}
