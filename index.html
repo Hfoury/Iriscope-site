@@ -80,7 +80,8 @@ h1 em{font-style:normal;-webkit-box-decoration-break:clone;box-decoration-break:
 .btns{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 .btn{display:inline-flex;align-items:center;gap:8px;min-height:50px;padding:12px 24px;border-radius:999px;font-weight:900;text-decoration:none;font-size:16.5px}
 .btn-main{background:#fff;color:var(--navy);box-shadow:0 6px 18px rgba(0,0,0,.25)}
-.btn-soon{border:2px solid rgba(255,255,255,.9);color:#fff;cursor:default}
+.btn-soon{border:2px solid rgba(255,255,255,.9);color:#fff}
+.essai{margin:14px 0 0;font-size:14.5px;font-weight:700;opacity:.9}
 .btn-soon svg{flex:none}
 .ticks{list-style:none;display:flex;flex-wrap:wrap;gap:6px 16px;padding:0;margin:18px 0 0;font-size:14.5px;font-weight:700;opacity:.95}
 .ticks li::before{content:"✓ ";color:#7be0a8;font-weight:900}
@@ -110,15 +111,22 @@ h2{color:var(--h2);font-size:clamp(25px,6vw,34px);font-weight:900;line-height:1.
 .feat .ico{flex:none;width:48px;height:48px;border-radius:14px;display:grid;place-items:center;font-size:24px;background:var(--c)}
 .feat h3{margin:0 0 3px;font-size:18px;font-weight:900}
 .feat p{margin:0;color:var(--muted);font-size:15.5px}
+.hr{display:inline-block;margin-top:8px;font-style:normal;font-weight:800;font-size:13.5px;color:var(--h2);background:var(--chip);border-radius:999px;padding:3px 11px}
 /* Journée */
 .day{background:var(--soft);border-radius:26px;padding:24px 18px}
-.tl{list-style:none;margin:0;padding:0;position:relative}
-.tl::before{content:"";position:absolute;left:29px;top:10px;bottom:10px;width:4px;border-radius:4px;background:var(--arc)}
-.tl li{position:relative;display:flex;gap:14px;align-items:center;padding:9px 0}
-.tl time{flex:none;width:62px;height:34px;border-radius:999px;background:var(--navy);color:#fff;font-weight:900;font-size:14px;display:grid;place-items:center;position:relative;z-index:1;border:2px solid var(--soft)}
-.tl b{display:block;font-weight:900}
-.tl span{color:var(--muted);font-size:15.5px}
-@media (min-width:800px){.day{padding:32px}.tl{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.tl::before{left:20px;right:20px;top:15px;bottom:auto;width:auto;height:4px;background:var(--arc-h)}.tl li{flex-direction:column;align-items:flex-start;gap:10px;padding:0}}
+.you{display:grid;gap:22px;justify-items:center}
+.you>div:first-child{justify-self:stretch}
+.you .phone{width:214px;box-shadow:0 10px 26px rgba(20,40,107,.2)}
+.steps{list-style:none;margin:0;padding:0;counter-reset:st;display:grid;gap:12px}
+.steps li{counter-increment:st;display:flex;gap:12px;align-items:flex-start}
+.steps li::before{content:counter(st);flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-weight:900;color:#fff;background:var(--c,#0D8BE6)}
+.steps li:nth-child(1){--c:#E5484D}.steps li:nth-child(2){--c:#30A46C}.steps li:nth-child(3){--c:#4C3FD6}
+.steps b{display:block;font-weight:900}.steps span{color:var(--muted);font-size:15.5px}
+.s-pick{background:var(--sc);border:1.5px solid #F5BE00;border-radius:12px;padding:8px;display:flex;flex-direction:column;gap:6px}
+.s-pick .s-ev{border:0;padding:2px 0}.s-pick .s-ev em{text-transform:none;letter-spacing:0;font-size:8.5px;color:#2B9A66}
+.s-more{text-align:center;font-weight:800;font-size:9.5px;color:#0D6EE6;border-top:1px solid var(--sl);padding-top:6px}
+@media (min-width:800px){.you{grid-template-columns:1.25fr .75fr;align-items:center;padding:32px}}
+@media (min-width:800px){.day{padding:32px}}
 /* Ruban d'écrans */
 .ribbon{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 16px 14px;margin:0 -16px;scrollbar-width:none}
 .ribbon::-webkit-scrollbar{display:none}
@@ -200,6 +208,7 @@ details p{margin:0 0 14px;color:var(--muted)}
 .form input,.form textarea,.form select{font:600 16px/1.4 Nunito,system-ui,sans-serif;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;width:100%}
 .form input:focus,.form textarea:focus,.form select:focus{outline:3px solid rgba(13,139,230,.35);border-color:#0D8BE6}
 .form .mini{font-size:13.5px;margin:0;text-align:center}
+.merci{max-width:440px;margin:18px auto 0;background:var(--note-bg);border-radius:16px;padding:16px}.merci p{color:var(--ink)!important;margin:0 0 12px!important}
 .os h3{margin:0 0 8px}.os .when{color:var(--ink);font-weight:800;margin:0 0 6px}.os .when b{color:var(--accent)}.os p{margin:0;color:var(--muted)}.os p b{color:var(--ink)}
 .tag{display:inline-block;background:var(--c);color:#fff;font-weight:900;font-size:15px;border-radius:999px;padding:5px 14px}
 .share{text-align:center;margin:22px 0 0}
@@ -207,6 +216,7 @@ details p{margin:0 0 14px;color:var(--muted)}
 footer{border-top:1px solid var(--line);padding:22px 0 40px;color:var(--muted);font-size:14.5px}
 footer nav{display:flex;flex-wrap:wrap;gap:8px 18px;margin-bottom:8px}
 footer a{font-weight:800}
+.ver{margin:10px 0 0;font-size:13px;opacity:.85}.ver a{font-weight:700}
 </style>
 </head>
 <body>
@@ -223,12 +233,10 @@ footer a{font-weight:800}
         <h1>Tout ce qui se passe près de chez vous, <em>en un coup d'œil</em></h1>
         <p class="lead">Sorties, météo, vigilances, balades et infos pratiques : <span class="iri">Iri<span>S</span>cope</span> rassemble l'essentiel de votre ville, à lire en prenant votre café le matin.</p>
         <div class="btns">
-          <a class="btn btn-main" href="#contact">Faire partie des premiers</a>
-          <span class="btn btn-soon">
-            <svg width="18" height="20" viewBox="0 0 18 20" aria-hidden="true"><path fill="currentColor" d="M1 1.2 10.4 10 1 18.8c-.3-.2-.5-.6-.5-1V2.2c0-.4.2-.8.5-1Zm10.6 7.7 2.6-2.4 2.9 1.7c.9.5.9 1.8 0 2.3l-2.9 1.7-2.6-2.5Zm-1.2 1.1 2.6 2.4L3 18.3l7.4-8.3Zm0-.1L3 1.7l10 5.9-2.6 2.3Z"/></svg>
-            Bientôt sur Google Play
-          </span>
+          <a class="btn btn-main" href="/commencer/">Essayer <span class="iri">Iri<span>S</span>cope</span></a>
+          <a class="btn btn-soon" href="#contact">Faire partie des premiers</a>
         </div>
+        <p class="essai">Version d'essai, gratuite. Sortie sur Google Play pour les fêtes de fin d'année.</p>
         <ul class="ticks"><li>Gratuit</li><li>Votre ville et vos lieux de vacances</li><li>Pour toute la famille</li></ul>
       </div>
       <div class="stage">
@@ -257,28 +265,42 @@ footer a{font-weight:800}
 
 <section aria-labelledby="quoi">
   <h2 id="quoi">Ce qu'<span class="iri">Iri<span>S</span>cope</span> fait pour vous</h2>
-  <p class="sub">Vous choisissez vos zones (maison, travail, vacances), <span class="iri">Iri<span>S</span>cope</span> s'occupe du reste.</p>
+  <p class="sub">Vous choisissez vos zones (maison, travail, vacances), <span class="iri">Iri<span>S</span>cope</span> s'occupe du reste, du café du matin à la sortie du soir.</p>
   <div class="grid g3">
-    <div class="card feat"><span class="ico" style="--c:#fde3e4">🎭</span><div><h3>Les sorties du coin</h3><p>Concerts, spectacles, cinéma, marchés, brocantes, expositions et ateliers, triés par jour et par distance.</p></div></div>
-    <div class="card feat"><span class="ico" style="--c:#ffe6d3">⛅</span><div><h3>Météo et vigilances</h3><p>Le temps de la journée et les alertes officielles (orages, crues, vent) pour chacune de vos zones.</p></div></div>
-    <div class="card feat"><span class="ico" style="--c:#fdf1c2">🥾</span><div><h3>Prendre l'air</h3><p>Balades, randonnées et sorties à vélo, en ville, à la campagne, à la mer ou à la montagne.</p></div></div>
-    <div class="card feat"><span class="ico" style="--c:#d6f1e3">🧭</span><div><h3>Pratique au quotidien</h3><p>Offices de tourisme, mairies, spots photo et itinéraire pour s'y rendre en un geste.</p></div></div>
+    <div class="card feat"><span class="ico" style="--c:#fde3e4">🎭</span><div><h3>Les sorties du coin</h3><p>Concerts, spectacles, cinéma, marchés, brocantes, expositions et ateliers, triés par jour et par distance.</p><em class="hr">20 h · un concert à deux pas</em></div></div>
+    <div class="card feat"><span class="ico" style="--c:#ffe6d3">⛅</span><div><h3>Météo et vigilances</h3><p>Le temps de la journée et les alertes officielles (orages, crues, vent) pour chacune de vos zones.</p><em class="hr">7 h · le résumé du matin</em></div></div>
+    <div class="card feat"><span class="ico" style="--c:#fdf1c2">🥾</span><div><h3>Prendre l'air</h3><p>Balades, randonnées et sorties à vélo, en ville, à la campagne, à la mer ou à la montagne.</p><em class="hr">Dimanche · une balade en famille</em></div></div>
+    <div class="card feat"><span class="ico" style="--c:#d6f1e3">🧭</span><div><h3>Pratique au quotidien</h3><p>Offices de tourisme, mairies, spots photo et itinéraire pour s'y rendre en un geste.</p><em class="hr">12 h · le marché à 800 m</em></div></div>
     <div class="card feat"><span class="ico" style="--c:#d5ebfc">🔎</span><div><h3>Une recherche qui comprend</h3><p>Tapez « brocante » ou « marché », même avec une faute : <span class="iri">Iri<span>S</span>cope</span> trouve quand même.</p></div></div>
     <div class="card feat"><span class="ico" style="--c:#e2dffb">🔊</span><div><h3>Lecture à voix haute</h3><p>Écoutez le résumé du jour sans lire l'écran, pratique le matin ou en voiture.</p></div></div>
   </div>
 </section>
 
-<section aria-labelledby="journee">
-  <div class="day">
-    <h2 id="journee">Une journée avec <span class="iri">Iri<span>S</span>cope</span></h2>
-    <p class="sub">Un coup d'œil suffit, du café du matin à la sortie du soir.</p>
-    <ol class="tl">
-      <li><time>7 h</time><div><b>Le résumé du matin</b><span>Météo, vigilances et programme du jour, à lire ou à écouter.</span></div></li>
-      <li><time>12 h</time><div><b>Le marché à 800 m</b><span>Ce qui est ouvert et en cours, tout près de vous.</span></div></li>
-      <li><time>17 h</time><div><b>Une alerte orage</b><span>Vous êtes prévenu pour chacune de vos zones.</span></div></li>
-      <li><time>20 h</time><div><b>Un concert à deux pas</b><span>L'itinéraire s'ouvre en un geste.</span></div></li>
-      <li><time>Dim.</time><div><b>Une balade en famille</b><span>Choisie selon le niveau et la durée.</span></div></li>
-    </ol>
+<section aria-labelledby="pourvous">
+  <div class="day you">
+    <div>
+      <h2 id="pourvous"><span class="iri">Iri<span>S</span>cope</span> s'adapte à vous</h2>
+      <p class="sub">Trois écrans au premier lancement, et l'appli vous ressemble.</p>
+      <ol class="steps">
+        <li><div><b>Votre prénom et votre ville</b><span>La commune se propose pendant que vous tapez.</span></div></li>
+        <li><div><b>Ce qui vous intéresse</b><span>Concerts, marchés, balades, cinéma : vous touchez ce qui vous plaît.</span></div></li>
+        <li><div><b>« Choisi pour toi »</b><span>Trois sorties proches, avec la distance et la raison du choix.</span></div></li>
+      </ol>
+    </div>
+    <div class="phone"><div class="scr" role="img" aria-label="Exemple d'écran : trois sorties choisies selon vos goûts autour de Toulouse">
+      <div class="s-top"><small>Ce matin</small><b>Bonjour Camille</b></div>
+      <div class="s-body">
+        <div class="s-chips"><span class="on">🎷 Concerts</span><span class="on">🧺 Marchés</span><span>🥾 Balades</span></div>
+        <div class="s-pick">
+          <div class="s-h">⭐ Choisi pour toi</div>
+          <div class="s-ev"><i style="background:#9B4CC4">🎷</i><span><b>Soirée jazz manouche</b><small>Ce soir · à 2 km</small><em>Parce que tu aimes : Concerts</em></span></div>
+          <div class="s-ev"><i style="background:#F76B15">🧺</i><span><b>Marché des producteurs</b><small>Samedi · à 4 km</small><em>Parce que tu aimes : Marchés</em></span></div>
+          <div class="s-ev"><i style="background:#2B9A66">🎨</i><span><b>Atelier aquarelle</b><small>Dimanche · à 6 km</small><em>Parce que tu aimes : Ateliers</em></span></div>
+          <div class="s-more">Et si on allait un peu plus loin ?</div>
+        </div>
+      </div>
+      <div class="s-nav"><span class="on">Accueil</span><span>Carte</span><span>Sorties</span><span>Pratique</span></div>
+    </div></div>
   </div>
 </section>
 
@@ -347,7 +369,7 @@ footer a{font-weight:800}
       <p>Dès maintenant, <span class="iri">Iri<span>S</span>cope</span> s'utilise dans Safari et s'ajoute à l'écran d'accueil comme une appli : bouton Partager, puis « Sur l'écran d'accueil ».</p>
     </div>
   </div>
-  <p style="margin:16px 0 0"><a class="btn btn-ghost" href="#contact" style="text-decoration:none">Recevoir le lien pour mon téléphone</a></p>
+  <p style="margin:16px 0 0"><a class="btn btn-ghost" href="/commencer/" style="text-decoration:none">Essayer sur mon téléphone</a></p>
 </section>
 
 <section aria-labelledby="france">
@@ -391,6 +413,18 @@ footer a{font-weight:800}
   <details><summary>Je gère une salle : comment apparaître ?</summary><p>C'est gratuit pour vous. Écrivez-nous ou consultez la <a href="/salles/">page dédiée aux salles</a>.</p></details>
 </section>
 
+<section aria-labelledby="bientot">
+  <h2 id="bientot">Bientôt, grâce à vous</h2>
+  <p class="sub">Ce qui se prépare, à partir des idées de la communauté.</p>
+  <div class="grid">
+    <div class="card feat"><span class="ico" style="--c:#d6f1e3">📍</span><div><h3>« J'y suis, ça a bien lieu »</h3><p>D'un geste, confirmez qu'une sortie a bien lieu, pour tous ceux qui hésitent encore.</p></div></div>
+    <div class="card feat"><span class="ico" style="--c:#d5ebfc">💬</span><div><h3>Demander aux voisins</h3><p>Une question sur votre coin ? Ceux qui y vivent vous répondent.</p></div></div>
+    <div class="card feat"><span class="ico" style="--c:#ffe6d3">🥕</span><div><h3>Recettes de saison</h3><p>Des idées de repas selon les produits de votre région et vos goûts.</p></div></div>
+    <div class="card feat"><span class="ico" style="--c:#fdf1c2">⏰</span><div><h3>L'heure de partir</h3><p>Un rappel au bon moment pour ne pas manquer votre sortie.</p></div></div>
+  </div>
+  <p class="sub" style="margin:16px 0 0">Il manque quelque chose ? <a href="#contact" style="font-weight:800">Soumettez votre idée</a>, le <a href="/journal/" style="font-weight:800">journal de bord</a> raconte ce qu'elles deviennent.</p>
+</section>
+
 <section aria-labelledby="pierre">
   <div class="build">
     <div>
@@ -422,6 +456,10 @@ footer a{font-weight:800}
       <button class="btn" type="submit">Je participe</button>
       <p class="mini">Votre message s'ouvre dans votre messagerie : rien n'est enregistré sur ce site.</p>
     </form>
+    <div id="merci" class="merci" hidden>
+      <p><b>Merci !</b> Votre message est prêt dans votre messagerie : il ne reste qu'à l'envoyer. Pas besoin d'attendre notre réponse pour découvrir l'appli.</p>
+      <a class="btn" href="/commencer/" style="text-decoration:none">Essayer <span class="iri">Iri<span>S</span>cope</span> maintenant</a>
+    </div>
     <p style="margin:14px auto 0;font-size:15px">Ou écrivez-nous : <a href="mailto:contact.iriscope@gmail.com" style="font-weight:800">contact.iriscope@gmail.com</a></p>
   </div>
 </section>
@@ -432,13 +470,14 @@ footer a{font-weight:800}
   <div class="wrap">
     <nav><a href="/salles/">Pour les salles</a><a href="/journal/">Journal de bord</a><a href="/mentions-legales.html">Mentions légales et confidentialité</a><a href="mailto:contact.iriscope@gmail.com">Contact</a></nav>
     © 2026 L'équipe <span class="iri">Iri<span>S</span>cope</span> · <span class="iri">Iri<span>S</span>cope</span> est en cours de développement et ses fonctions peuvent évoluer.
+    <p class="ver">Version en cours : 1.05.2, du 25 novembre 2026 · <a href="/journal/">ce qui a changé</a></p>
   </div>
 </footer>
 <script>
 document.getElementById('participer').addEventListener('submit',function(e){
   e.preventDefault();if(this._envoi)return;this._envoi=1;var moi=this;setTimeout(function(){moi._envoi=0;},4000);var f=e.target,p=f.prenom.value.trim(),c=f.commune.value.trim(),v=f.envies.value.trim();
   var corps='Bonjour,\n\nJe souhaite faire partie des premiers membres de la communauté IriScope.\n\nPrénom : '+p+'\nCommune : '+c+'\nTéléphone : '+f.tel.value+(v?'\n\nMes idées, mes envies :\n'+v:'')+'\n';
-  var l=document.createElement('a');l.href='mailto:contact.iriscope@gmail.com?subject='+encodeURIComponent('Je participe ('+c+')')+'&body='+encodeURIComponent(corps);l.style.display='none';document.body.appendChild(l);l.click();l.remove();
+  var l=document.createElement('a');l.href='mailto:contact.iriscope@gmail.com?subject='+encodeURIComponent('Je participe ('+c+')')+'&body='+encodeURIComponent(corps);l.style.display='none';document.body.appendChild(l);l.click();l.remove();document.getElementById('merci').hidden=false;
 });
 document.getElementById('partager').addEventListener('click',function(){
   var t="J'apporte ma pierre à la communauté IriScope, l'appli des sorties et de la vie pratique près de chez soi. Et vous ?",u='https://iriscope-app.fr/';
