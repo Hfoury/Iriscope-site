@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Iriscope : sorties, météo et infos pratiques près de chez vous</title>
-<meta name="description" content="Iriscope, l'appli gratuite de votre coin : concerts, spectacles, marchés et cinéma près de chez vous, météo, vigilances et balades, partout en France. Bientôt sur Google Play.">
+<meta name="description" content="Iriscope, l'appli de votre coin : concerts, spectacles, marchés et cinéma près de chez vous, météo, vigilances et balades, partout en France. Bientôt sur Google Play.">
 <link rel="canonical" href="https://iriscope-app.fr/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="color-scheme" content="dark">
@@ -19,7 +19,7 @@
 <meta property="og:site_name" content="Iriscope">
 <meta property="og:url" content="https://iriscope-app.fr/">
 <meta property="og:title" content="Iriscope : l'appli de votre coin">
-<meta property="og:description" content="Sorties, météo, vigilances et infos pratiques près de chez vous, en un coup d'œil chaque matin. Gratuit.">
+<meta property="og:description" content="Sorties, météo, vigilances et infos pratiques près de chez vous, en un coup d'œil chaque matin.">
 <meta property="og:image" content="https://iriscope-app.fr/img/partage.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -30,9 +30,9 @@
 {"@context":"https://schema.org","@graph":[
 {"@type":"Organization","@id":"https://iriscope-app.fr/#org","name":"IriScope","url":"https://iriscope-app.fr/","logo":"https://iriscope-app.fr/img/icone.png","email":"contact.iriscope@gmail.com"},
 {"@type":"WebSite","@id":"https://iriscope-app.fr/#site","url":"https://iriscope-app.fr/","name":"Iriscope","inLanguage":"fr-FR","publisher":{"@id":"https://iriscope-app.fr/#org"}},
-{"@type":"SoftwareApplication","name":"Iriscope","applicationCategory":"LifestyleApplication","operatingSystem":"Android, Web","inLanguage":"fr-FR","description":"L'appli de votre coin : sorties, météo et vigilances, balades et infos pratiques près de chez vous, partout en France.","image":"https://iriscope-app.fr/img/partage.png","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://iriscope-app.fr/#org"}},
+{"@type":"SoftwareApplication","name":"Iriscope","applicationCategory":"LifestyleApplication","operatingSystem":"Android, Web","inLanguage":"fr-FR","description":"L'appli de votre coin : sorties, météo et vigilances, balades et infos pratiques près de chez vous, partout en France.","image":"https://iriscope-app.fr/img/partage.png","publisher":{"@id":"https://iriscope-app.fr/#org"}},
 {"@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"Iriscope est-elle gratuite ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Les sorties, la météo, les vigilances, les infos pratiques, la recherche et la lecture vocale sont gratuites, pour toujours."}},
+{"@type":"Question","name":"Iriscope est-elle gratuite ?","acceptedAnswer":{"@type":"Answer","text":"Iriscope est gratuite pendant la phase de test. Son fonctionnement définitif n'est pas encore arrêté : il sera annoncé sur ce site avant la sortie sur Google Play."}},
 {"@type":"Question","name":"Iriscope existe-t-elle sur Android et sur iPhone ?","acceptedAnswer":{"@type":"Answer","text":"Iriscope est en phase de tests intensifs. Sa sortie est prévue pour les fêtes de fin d'année sur Google Play (Android) et fin janvier sur l'App Store (iPhone). En attendant, les premiers testeurs l'utilisent déjà sur les deux."}},
 {"@type":"Question","name":"Quelles villes sont couvertes ?","acceptedAnswer":{"@type":"Answer","text":"Toute la France métropolitaine. Vous choisissez une ou plusieurs zones (domicile, travail, vacances) et Iriscope s'occupe du reste."}},
 {"@type":"Question","name":"Je gère une salle ou j'organise des événements : comment apparaître ?","acceptedAnswer":{"@type":"Answer","text":"C'est gratuit pour vous. Écrivez à contact.iriscope@gmail.com ou consultez la page dédiée aux salles."}}
@@ -170,8 +170,7 @@ h2{color:var(--h2);font-size:clamp(25px,6vw,34px);font-weight:900;line-height:1.
 .free{background:linear-gradient(160deg,var(--navy),var(--navy2));color:#fff;border-radius:26px;padding:26px 20px;position:relative;overflow:hidden}
 .free::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;background:var(--arc-h)}
 .free h2{color:#fff}
-.free .price{font-size:54px;font-weight:900;line-height:1;margin:6px 0 2px}
-.free .price small{font-size:17px;font-weight:800;opacity:.9}
+.free .essai2{margin:6px 0 4px;font-size:17px;opacity:.95;max-width:30em}
 ul.ok{list-style:none;padding:0;margin:14px 0 0}
 @media (min-width:620px){ul.ok{columns:2;column-gap:28px}}
 ul.ok li{padding:5px 0 5px 28px;position:relative;break-inside:avoid}
@@ -236,8 +235,8 @@ footer a{font-weight:800}
           <a class="btn btn-main" href="/commencer/">Essayer <span class="iri">Iri<span>S</span>cope</span></a>
           <a class="btn btn-soon" href="#contact">Faire partie des premiers</a>
         </div>
-        <p class="essai">Version d'essai, gratuite. Sortie sur Google Play pour les fêtes de fin d'année.</p>
-        <ul class="ticks"><li>Gratuit</li><li>Votre ville et vos lieux de vacances</li><li>Pour toute la famille</li></ul>
+        <p class="essai">Version d'essai. Sortie sur Google Play prévue pour les fêtes de fin d'année.</p>
+        <ul class="ticks"><li>Gratuit pendant la phase de test</li><li>Votre ville et vos lieux de vacances</li><li>Pour toute la famille</li></ul>
       </div>
       <div class="stage">
         <div class="float f1" aria-hidden="true">⛅<span>9° à Lyon<small>Éclaircies</small></span></div>
@@ -380,8 +379,8 @@ footer a{font-weight:800}
 
 <section aria-labelledby="gratuit">
   <div class="free">
-    <h2 id="gratuit">Gratuit, pour toujours</h2>
-    <p class="price">0 € <small>sans abonnement</small></p>
+    <h2 id="gratuit">Gratuit pendant la phase de test</h2>
+    <p class="essai2">Aujourd'hui, les testeurs essaient tout cela librement, et leurs retours font grandir l'appli.</p>
     <ul class="ok">
       <li>Toutes les sorties de vos zones</li>
       <li>Météo et vigilances officielles</li>
@@ -407,7 +406,7 @@ footer a{font-weight:800}
 
 <section aria-labelledby="faq">
   <h2 id="faq">Questions fréquentes</h2>
-  <details><summary><span class="iri">Iri<span>S</span>cope</span> est-elle gratuite ?</summary><p>Oui. Les sorties, la météo, les vigilances, les infos pratiques, la recherche et la lecture vocale sont gratuites, pour toujours.</p></details>
+  <details><summary><span class="iri">Iri<span>S</span>cope</span> est-elle gratuite ?</summary><p><span class="iri">Iri<span>S</span>cope</span> est gratuite pendant la phase de test. Son fonctionnement définitif n'est pas encore arrêté : nous l'annoncerons ici avant la sortie sur Google Play.</p></details>
   <details><summary>Existe-t-elle sur Android et sur iPhone ?</summary><p><span class="iri">Iri<span>S</span>cope</span> est en phase de tests intensifs. Sa sortie est prévue pour les fêtes de fin d'année sur Google Play (Android) et fin janvier sur l'App Store (iPhone). Ces dates peuvent bouger un peu. Pour l'essayer dès maintenant, faites partie des premiers testeurs.</p></details>
   <details><summary>Quelles villes sont couvertes ?</summary><p>Toute la France métropolitaine. Vous choisissez une ou plusieurs zones (domicile, travail, vacances) et <span class="iri">Iri<span>S</span>cope</span> s'occupe du reste.</p></details>
   <details><summary>Je gère une salle : comment apparaître ?</summary><p>C'est gratuit pour vous. Écrivez-nous ou consultez la <a href="/salles/">page dédiée aux salles</a>.</p></details>
