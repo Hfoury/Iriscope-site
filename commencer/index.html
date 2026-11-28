@@ -28,6 +28,7 @@ main{max-width:560px;margin:0 auto;padding:18px 16px 40px;display:grid;gap:14px}
 ol{margin:8px 0 12px;padding-left:22px;color:var(--muted)}li{margin:3px 0}
 .btn{display:flex;justify-content:center;align-items:center;min-height:52px;border-radius:999px;background:#fff;color:#14286B;font-weight:900;font-size:17px;text-decoration:none;padding:12px 20px}
 .decouvrir{display:inline-flex;align-items:center;justify-content:center;min-height:46px;margin-top:16px;padding:9px 20px;border-radius:999px;border:1.5px solid #8CCBF0;background:rgba(140,203,240,.14);color:#fff;font-weight:900;font-size:16px;text-decoration:none}
+.warn{margin-top:14px;border:1.5px solid var(--line);border-radius:16px;padding:12px 14px;background:rgba(48,164,108,.10)}.warn h3{margin:0 0 6px;font-size:16.5px;font-weight:900;color:var(--h)}.warn p{margin:6px 0;font-size:15px;color:var(--muted)}.warn ol{margin:6px 0;font-size:15px}.warn b{color:var(--ink)}
 .tip{order:3;color:var(--muted);font-size:15px;text-align:center;margin:4px 0 0}.tip a{color:var(--h);font-weight:800}
 </style></head><body>
 <div class="bar"></div>
@@ -37,7 +38,13 @@ ol{margin:8px 0 12px;padding-left:22px;color:var(--muted)}li{margin:3px 0}
 <main>
 <section class="os" id="android" style="--c:#30A46C"><h2>📱 Android<span class="mine">Votre appareil</span></h2>
 <ol><li>Appuyez sur le bouton : l'appli se télécharge.</li><li>Ouvrez le fichier et acceptez l'installation.</li><li>Ouvrez <span class="iri">Iri<span>S</span>cope</span> et créez votre compte.</li></ol>
-<a class="btn" href="https://github.com/Hfoury/iriscope/releases/latest/download/iriscope.apk">Installer l'appli Android</a></section>
+<a class="btn" href="https://github.com/Hfoury/iriscope/releases/latest/download/iriscope.apk">Installer l'appli Android</a>
+<div class="warn"><h3>🛡️ Votre téléphone affiche un avertissement ? C'est normal</h3>
+<p>Pendant la phase de test, <span class="iri">Iri<span>S</span>cope</span> n'est pas encore sur Google Play. Android demande donc votre accord avant d'installer. Les mots changent un peu selon la marque du téléphone.</p>
+<ol><li><b>Au téléchargement</b>, si le navigateur dit «&nbsp;Ce fichier peut être dangereux&nbsp;» : touchez «&nbsp;Télécharger quand même&nbsp;».</li>
+<li><b>À l'ouverture du fichier</b>, si le téléphone dit qu'il n'est «&nbsp;pas autorisé à installer des applications inconnues provenant de cette source&nbsp;» : touchez «&nbsp;Paramètres&nbsp;», activez «&nbsp;Autoriser cette source&nbsp;», puis revenez en arrière et touchez «&nbsp;Installer&nbsp;».</li>
+<li><b>Si Google Play Protect</b> affiche «&nbsp;Application inconnue&nbsp;» ou propose une analyse : touchez «&nbsp;Plus de détails&nbsp;», puis «&nbsp;Installer quand même&nbsp;».</li></ol>
+<p>Une fois l'appli installée, vous pouvez retirer l'autorisation dans les paramètres du téléphone. Ces étapes disparaîtront à l'arrivée sur Google Play.</p></div></section>
 <section class="os" id="iphone" style="--c:#0D8BE6"><h2>🍏 iPhone<span class="mine">Votre appareil</span></h2>
 <ol><li>Ouvrez cette page dans Safari.</li><li>Appuyez sur le bouton et créez votre compte.</li><li>Bouton Partager, puis «&nbsp;Sur l'écran d'accueil&nbsp;».</li></ol>
 <a class="btn" href="https://hfoury.github.io/iriscope/?v=2">Ouvrir IriScope</a></section>
